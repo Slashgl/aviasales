@@ -1,0 +1,21 @@
+
+.tickets-info {
+  display: flex;
+  justify-content: space-around;
+  width: 461px;
+}
+.tickets-header {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #A0B0B9;
+}
+.tickets-footer {
+  font-weight: 600;
+  font-size: 14px;
+  color: #4A4A4A;
+}
+.tickets-week {
+  margin-bottom: 15px;
+}
