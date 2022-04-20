@@ -19,4 +19,5 @@ function Ticket() {
     </div>
   );
 }
+
 export default Ticket;
