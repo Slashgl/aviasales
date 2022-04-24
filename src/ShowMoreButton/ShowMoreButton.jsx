@@ -6,4 +6,5 @@ function ShowMoreButton() {
     <button type="button" className={classes.showMore}>Показать еще 5 билетов!</button>
   );
 }
+
 export default ShowMoreButton;
