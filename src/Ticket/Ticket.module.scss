@@ -19,3 +19,21 @@
 .tickets-week {
   margin-bottom: 15px;
 }
+
+.tickets {
+  margin-top: 20px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.tickets-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.tickets-price {
+  font-weight: 600;
+  font-size: 24px;
+  color: #2196F3;
+}
