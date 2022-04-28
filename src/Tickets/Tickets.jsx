@@ -1,16 +1,20 @@
-import React from 'react';
-import classes from './Tickets.module.scss';
+import React, {useEffect} from 'react';
 import Ticket from '../Ticket/Ticket';
+import {useDispatch, useSelector} from "react-redux";
+import {fetchTickets} from "../toolkitSlice/toolkitSlice";
 
 function Tickets() {
+    const tickets = useSelector(state => state.toolkit.tickets)
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(fetchTickets)
+        console.log(tickets)
+    })
+
   return (
-    <div className={classes.tickets}>
-      <div className={classes['tickets-header']}>
-        <div className={classes['tickets-price']}>13 400 Р</div>
-        <div className={classes['tickets-img']}><img src="../../public/S7Logo.svg" alt="logo" /></div>
-      </div>
-      <Ticket />
-      <Ticket />
+    <div>
+        <Ticket/>
     </div>
   );
 }

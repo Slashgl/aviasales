@@ -7,9 +7,7 @@ function FilterList() {
     const filters = useSelector((state) => state.toolkit.transfer);
     const dispatch = useDispatch();
 
-
     return (
-
         <div className={classes.filter}>
             <div className={classes['filter-descr']}>Количество пересадок</div>
             <div className={classes['filter-items']}>
@@ -29,7 +27,6 @@ function FilterList() {
                 }
             </div>
         </div>
-
     )
 }
 
